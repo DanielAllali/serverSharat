@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharatServer - Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="shortcut icon" href="guy.png">
+    <style>
+        @font-face {
+            font-family: "big";
+            src: url("Rubik-Italic-VariableFont_wght.ttf");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="container">
+            <h1>ברוך הבא לאתר הרשמי של <span>שרת סרבר!!</span></h1>
+            <div class="buttons">
+                <a href="../mainPage/Home/Home.html">כך אותי לדף הבית</a>
+                <a> לדף הרשמי של דניאל המלך</a>
+            </div>
+        </div>
+        <aside id="aside">
+            <h1>פרסומת מטורפת!!!</h1>
+            <p>כאן חברים אהובים תוכלו לשלם כדי שהפרסומת שלכם תופיע כאן!!</p>
+            <img src="adImg.jpg" alt="התמונה שלך">
+        </aside>
+        <aside id="aside2" class="leftAside">
+            <h1>פרסומת מטורפת!!!</h1>
+            <p>כאן חברים אהובים תוכלו לשלם כדי שהפרסומת שלכם תופיע כאן!!</p>
+            <img src="adImg.jpg" alt="התמונה שלך">
+        </aside>
+    </div>
+    <script>
+        let container = document.getElementById("container");
+        setTimeout(function () {
+            container.style.opacity = "1";
+            container.style.marginTop = "0";
+        }, 10)
+        let aside = document.getElementById("aside");
+        setTimeout(function () {
+            aside.style.opacity = "1";
+            aside.style.marginTop = "0";
+        }, 10)
+        let aside2 = document.getElementById("aside2");
+        setTimeout(function () {
+            aside2.style.opacity = "1";
+            aside2.style.marginTop = "0";
+        }, 10)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "big";
+}
+
+body {
+    background-image: url("myMincraftImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #313131;
+}
+
+#all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    order: 2;
+    margin: 0 auto;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -200px;
+    opacity: 0;
+    transition: opacity 1s, margin-top 0.5s;
+}
+
+#container .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 60vw;
+    padding-right: 2vw;
+    margin-top: 10vw;
+}
+
+#container a {
+    order: 1;
+    font-family: "big";
+    width: 300px;
+    height: 100px;
+    border: 1px solid #c5910d;
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+#container a+a {
+    margin-top: 5vw;
+}
+
+#container a:hover {
+    background-color: #dfa40e;
+    transform: scale(1.1);
+}
+
+#container h1 {
+    direction: rtl;
+    font-family: "big";
+    font-weight: 800;
+    color: white;
+    margin-top: 3vw;
+}
+
+#container h1 span {
+    color: darkgoldenrod;
+    cursor: default;
+    transition: color 0.3s, font-weight 0.3s, background-color 0.3s;
+}
+
+#container h1 span:hover {
+    color: darkred;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: 1000;
+    animation: nameAni 0.5s infinite;
+}
+
+@keyframes nameAni {
+    0% {
+        color: darkred;
+        font-weight: 1000;
+    }
+
+    12.5% {
+        color: red;
+        font-weight: normal;
+    }
+
+    25% {
+        color: orange;
+        font-weight: 1000;
+    }
+
+    37.5% {
+        color: yellow;
+        font-weight: normal;
+    }
+
+    50% {
+        color: green;
+        font-weight: 1000;
+    }
+
+    62.5% {
+        color: cyan;
+        font-weight: normal;
+    }
+
+    75% {
+        color: blue;
+        font-weight: 1000;
+    }
+
+    87.5% {
+        color: purple;
+        font-weight: normal;
+    }
+
+    100% {
+        color: pink;
+        font-weight: 1000;
+    }
+}
+
+aside {
+    order: 1;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgba(184, 134, 11, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    margin-top: 10vw;
+    transition: opacity 1s, margin-top 0.5s;
+}
+
+aside:hover {
+    animation: nameAni 0.5s infinite;
+}
+
+aside img {
+    width: 20vw;
+    height: 10vw;
+}
+
+aside.leftAside {
+    order: 3;
+}
