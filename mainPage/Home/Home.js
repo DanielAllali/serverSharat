@@ -61,4 +61,3 @@ function userClick() {
         }
     }
 }
-

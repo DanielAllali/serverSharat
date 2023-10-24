@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "big";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "big";
+    src: url("../../welcome/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+body {
+    background-image: url("minecraftBackground.jpg");
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background-color: #a57a2a;
+}
+
+header .profile {
+    width: 20vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+header .profile #img {
+    background-color: #000;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+header .profile img {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+header .profile #usname {
+    cursor: pointer;
+}
+
+header .profile #usname:hover {
+    text-decoration: underline;
+}
+
+header nav {
+    width: 40vw;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    border-bottom-color: #000;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    transition: text-decoration 0.5s, color 0.2s;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+header nav #home {
+    text-decoration: underline;
+}
+
+header nav #middle {
+    width: 15vw;
+    text-align: center;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transition: border-left 0.2s, border-right 0.2s;
+}
+
+header .welcomeBtn {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 7vw;
+}
+
+header .welcomeBtn button {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-size: 2rem;
+    background-color: green;
+    color: white;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+header .welcomeBtn button:hover {
+    background-color: white;
+    color: green;
+}
+
+@media (max-width:1260px) {
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header nav #middle {
+        border-right: none;
+        border-left: none;
+    }
+
+    header .profile #usname {
+        font-size: 1.5rem;
+    }
+
+    header .welcomeBtn button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:550px) {
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    header .profile #usname {
+        font-size: 0.8rem;
+    }
+
+    header .welcomeBtn button {
+        font-size: 1rem;
+    }
+
+}
